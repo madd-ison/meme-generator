@@ -1,31 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Goldman&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: whitesmoke;
+  background-color: #000;
 }
 
 header {
   height: 100px;
   display: flex;
+  font-family: 'Goldman', cursive;
   align-items: center;
   background: #6441A5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-header > img {
-  height: 80%;
-  margin-left: 10%;
+  background: -webkit-linear-gradient(to right, #6fe282, #51ec59);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #75f385, #6df35c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header > p {
-  font-family: VT323, monospace;
   color: whitesmoke;
-  font-size: 50px;
-  margin-left: 60px;
+  font-size: 8vw;
+  margin: 10px auto;
+  text-decoration-line: none;
 }
 
 .meme {
@@ -46,7 +44,7 @@ header > p {
   transform: translateX(-50%);
   margin: 15px 0;
   padding: 0 5px;
-  font-family: impact, sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 2em;
   text-transform: uppercase;
   color: white;
@@ -71,6 +69,10 @@ header > p {
   top: 0;
 }
 
+.meme {
+  box-shadow: 0.5px 2px 5px #6df35c;
+}
+
 .meme-form {
   width: 90%;
   margin: 20px auto;
@@ -85,30 +87,31 @@ header > p {
 
 .meme-form > button {
   border: none;
-  font-family: VT323, monospace;
+  font-family: 'Goldman', cursive;
   font-size: 25px;
   letter-spacing: 1.5px;
   color: white;
-  background: #6441A5;
+  background: #6df35c;
+  cursor: pointer;
 }
 
 .meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-font-family: VT323, monospace;
-font-size: 25px;
+font-family: 'Goldman', cursive;
+font-size: 18px;
 text-align: cen
 }
 .meme-form > input::-moz-placeholder { /* Firefox 19+ */
 font-family: VT323, monospace;
-font-size: 25px;
+font-size: 18px;
 text-align: cen
 }
 .meme-form > input:-ms-input-placeholder { /* IE 10+ */
 font-family: VT323, monospace;
-font-size: 25px;
+font-size: 18px;
 text-align: cen
 }
 .meme-form > input:-moz-placeholder { /* Firefox 18- */
 font-family: VT323, monospace;
-font-size: 25px;
+font-size: 18px;
 text-align: cen
 }
